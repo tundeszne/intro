@@ -14,4 +14,4 @@ jobs:
         server: ftp.macramotiv.com
         username: tunde.macramotiv.com
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./sub/intro
+        local-dir: ./sub/intro/
