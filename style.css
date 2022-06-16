@@ -6,4 +6,50 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  color: #060552;
 }
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #060552;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  background: rgb(255, 249, 231);
+  background: linear-gradient(
+    87deg,
+    rgba(255, 249, 231, 1) 14%,
+    rgba(203, 235, 247, 1) 100%
+  );
+}
+
+.photo {
+  height: 150px;
+  border-radius: 50%;
+  filter: brightness(1.25);
+}
+
+footer {
+  background-color: black;
+  color: #fff9e7;
+}
+
+.social-logo {
+  width: 30px;
+  border-radius: 30%;
+}
+/*
+Colors:
+#fff9e7 #cbebf7
+*/
