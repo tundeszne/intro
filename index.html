@@ -16,71 +16,51 @@
   </head>
   <body>
     <header class="header">
-      <a href="">
-        <img class="photo" src="./assets/myphoto1.jpg" alt="Tunde's photo" />
-      </a>
+      <img class="photo" src="./assets/myphoto1.jpg" alt="Tunde's photo" />
       <nav class="nav">
         <ul class="nav__items">
           <li>
-            <a class="nav__link" href="">Education</a>
+            <a class="nav__link" href="#education">Education</a>
           </li>
           <li>
-            <a class="nav__link" href="">Work experience</aclass=>
-          </liass=>
+            <a class="nav__link" href="#work_experience">Work experience</a>
+          </li>
           <li>
-            <a class="nav__link" href="">Journey</alass=>
-          </liclass=>
+            <a class="nav__link" href="#journey">Journey</a>
+          </li>
           <li>
-            <a class="nav__link" href="">Technical</ass=>
-          </li=>
-          <li>
-            <a class="nav__link" href="">Contact</a>
-          </liclass=>
-          <li>
-            <a class="nav__link" href="">Download CV</aclass=>
+            <a class="nav__link" href="#technical">Technical</a>
           </li>
         </ul>
       </nav>
       <!-- Language switcher links -->
-      <ul class="lang-switcher">
-        <li>
-          <a class="lang-switcher__link" href="">EN</a>
-        </li>
-        <li>
-          <a class="lang-switcher__link" href="">HU</a>
-        </li>
-      </ul>
+      <div class="lang-switcher">
+        <button class="lang-switch">EN</button>
+        <button class="lang-switch">HU</button>
+      </div>
       <!-- Theme switcher dropdown when clicked -->
-      <ul class="theme">
-        <li>
-          <a class="theme__link" href="">Winter</a>
-        </li>
-        <li>
-          <a class="theme__link" href="">Spring</a>
-        </li>
-        <li>
-          <a class="theme__link" href="">Summer</a>
-        </li>
-        <li>
-          <a class="theme__link" href="">Autumn</a>
-        </li>
-      </ul>
+      <div name="themes" id="themes">
+        <button>Winter</button>
+        <button>Spring</button>
+        <button>Summer</button>
+        <button>Autumn</button>
+      </div>
     </header>
     <main class="main">
-      <section>
+      <section id="education">
         <h2>Education</h2>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
         cumque veritatis, nesciunt laudantium quis rem aspernatur rerum
-        dignissimos voluptates,  dolor sit amet, consectetur adipisicing elit. Repudiandae
-        cumque veritatis, nesciunt laudantium quis rem aspernatur rerum
-        dignissimos voluptates, amet nisi ipsam perferendis minus qui impedit.
-        Exercitationem consequa dolor sit amet, consectetur adipisicing elit. Repudiandae
-        cumque veritatis, nesciunt laudantium quis rem aspernatur rerum
-        dignissimos voluptates, amet nisi ipsam perferendis minus qui impedit.
-        Exercitationem consequaamet nisi ipsam perferendis minus qui impedit.
-        Exercitationem consequatur rem explicabo!
+        dignissimos voluptates, dolor sit amet, consectetur adipisicing elit.
+        Repudiandae cumque veritatis, nesciunt laudantium quis rem aspernatur
+        rerum dignissimos voluptates, amet nisi ipsam perferendis minus qui
+        impedit. Exercitationem consequa dolor sit amet, consectetur adipisicing
+        elit. Repudiandae cumque veritatis, nesciunt laudantium quis rem
+        aspernatur rerum dignissimos voluptates, amet nisi ipsam perferendis
+        minus qui impedit. Exercitationem consequaamet nisi ipsam perferendis
+        minus qui impedit. Exercitationem consequatur rem explicabo!
       </section>
-      <section>
+      <section id="work_experience">
         <h2>Work experience</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem commodi
         magnam voluptates alias ipsam laborum in iure sint cum pariatur, labore
@@ -89,7 +69,7 @@
         iure sint cum pariatur, labore quas, voluptatibus nemo sit doloremqa
         deleniti rerum nostrum.
       </section>
-      <section>
+      <section id="journey">
         <h2>My journey led me here</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
         cum odio esse? Nobis beatae praesentium omnis! Quis, impedit! Dolores
@@ -100,7 +80,7 @@
         laborum in iure sint cum pariatur, labore quas, voluptatibus nemo sit
         doloremqlo facere delectus deleniti ut quibusdam ipsa.
       </section>
-      <section>
+      <section id="technical">
         <h2>Technical skills</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eligendi, at
         ab praesentium, modi ex itaor sit amet consectetur adipisicing elit. Rem
@@ -119,8 +99,17 @@
     </main>
     <footer class="footer">
       <nav class="footer__nav">
-        <a href="https://www.codewars.com/users/TundeSzne" target="_blank"><img class="social-logo" src="./assets/codewars_logo.svg" alt="CodeWars logo" /></a>
-        <img class="social-logo" src="./assets/GitHub_logo.png" alt="GitHub logo" />
+        <a href="https://www.codewars.com/users/TundeSzne" target="_blank"
+          ><img
+            class="social-logo"
+            src="./assets/codewars_logo.svg"
+            alt="CodeWars logo"
+        /></a>
+        <img
+          class="social-logo"
+          src="./assets/GitHub_logo.png"
+          alt="GitHub logo"
+        />
         <!-- TODO: links to social: GitHub, CodeWars -->
         <!-- TODO: link to download CV -->
         <!-- TODO: link to email -->
