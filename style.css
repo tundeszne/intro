@@ -1,3 +1,15 @@
+:root {
+  --main-text: #07065d;
+  --footer-background: #05052a;
+  --main-background: #fff9e7;
+  --shadow-color: #888888;
+}
+/*
+Colors:
+Dark-blue : #fff9e7
+Cream     : #cbebf7
+*/
+
 html,
 body {
   width: 100%;
@@ -6,4 +18,204 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  color: var(--main-text);
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background: rgb(255, 249, 231);
+  background: linear-gradient(
+    87deg,
+    rgba(255, 249, 231, 1) 14%,
+    rgba(203, 235, 247, 1) 100%
+  );
+}
+
+.photo {
+  height: 150px;
+  border-radius: 50%;
+  filter: brightness(1.25);
+  margin: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--main-text);
+  box-shadow: 4px 5px 10px var(--shadow-color);
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.nav .nav__items {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.nav__link {
+  padding: 15px;
+  background-color: var(--main-text);
+  color: var(--main-background);
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--main-text);
+  box-shadow: 4px 5px 10px var(--shadow-color);
+  transition-duration: 0.4s;
+}
+
+.nav__link:hover {
+  background-color: var(--main-background);
+  color: var(--main-text);
+  border-style: solid;
+  border-width: 2px;
+}
+
+.nav__link:active {
+  background-color: var(--main-text);
+  color: var(--main-background);
+  transform: translateY(4px);
+}
+
+.themes {
+  display: grid;
+  gap: 6px;
+  padding-right: 5%;
+}
+
+.theme {
+  box-shadow: 4px 5px 10px var(--shadow-color);
+  transition-duration: 0.4s;
+  font-size: small;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.theme.winter {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: var(--main-text);
+  color: var(--main-background);
+  border-color: var(--main-text);
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.theme.winter:hover {
+  background-color: var(--main-background);
+  color: var(--main-text);
+  border-color: var(--main-text);
+}
+
+.theme.spring {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #519259;
+  color: #f4eea9;
+  border-color: #064635;
+  /* additional color: #F0BB62*/
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.theme.spring:hover {
+  background-color: #f4eea9;
+  color: #519259;
+  border-color: #519259;
+}
+
+.theme.summer {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: #0e6394;
+  color: #f3e9dd;
+  border-color: #0e6394;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.theme.summer:hover {
+  background-color: #f3e9dd;
+  color: #0e6394;
+  border-color: #0e6394;
+}
+
+.theme.autumn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: #d06224;
+  color: #f9e4c0;
+  border-color: #8a8635;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.theme.autumn:hover {
+  background-color: #f9e4c0;
+  color: #d06224;
+  border-color: #d06224;
+}
+
+.lang-switcher {
+  display: grid;
+  gap: 6px;
+  padding-right: 5%;
+}
+
+.lang-switch {
+  background-color: var(--main-background);
+  color: var(--main-text);
+  font-size: 0.8em;
+  font-weight: bold;
+  border-style: solid;
+  border-width: thin;
+  border-color: var(--main-text);
+  border-radius: 5px;
+  box-shadow: 4px 5px 10px var(--shadow-color);
+  transition-duration: 0.4s;
+}
+
+.lang-switch:hover {
+  background-color: var(--main-text);
+  color: var(--main-background);
+  border-color: var(--main-text);
+}
+
+footer {
+  background-color: var(--footer-background);
+  color: var(--main-background);
+}
+
+.social-logo {
+  width: 30px;
+  border-radius: 30%;
 }
