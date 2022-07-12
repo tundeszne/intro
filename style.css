@@ -45,7 +45,7 @@ a {
   border-radius: 50%;
   filter: brightness(1.25);
   margin: 5px;
-  border-width: medium;
+  border-width: 2px;
   border-style: solid;
   border-color: var(--main-text);
   box-shadow: 4px 5px 10px var(--shadow-color);
@@ -70,40 +70,43 @@ a {
   letter-spacing: 1px;
   border-radius: 10px;
   border-style: solid;
-  border-width: medium;
+  border-width: 2px;
   border-color: var(--main-text);
   box-shadow: 4px 5px 10px var(--shadow-color);
+  transition-duration: 0.4s;
 }
 
 .nav__link:hover {
   background-color: var(--main-background);
   color: var(--main-text);
   border-style: solid;
-  border-width: medium;
+  border-width: 2px;
 }
 
-.lang-switch {
-  background-color: var(--main-background);
-  color: var(--main-text);
-  font-weight: bold;
-  border-style: solid;
-  border-width: thin;
-  border-color: var(--main-text);
-  border-radius: 5px;
-  box-shadow: 4px 5px 10px var(--shadow-color);
-}
-
-.lang-switch:hover {
+.nav__link:active {
   background-color: var(--main-text);
   color: var(--main-background);
-  border-color: var(--main-text);
+  transform: translateY(4px);
+}
+
+.themes {
+  display: grid;
+  gap: 6px;
+  padding-right: 5%;
 }
 
 .theme {
   box-shadow: 4px 5px 10px var(--shadow-color);
+  transition-duration: 0.4s;
+  font-size: small;
+  text-align: center;
 }
 
 .theme.winter {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
   background-color: var(--main-text);
   color: var(--main-background);
   border-color: var(--main-text);
@@ -120,6 +123,10 @@ a {
 }
 
 .theme.spring {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   background-color: #519259;
   color: #f4eea9;
   border-color: #064635;
@@ -137,6 +144,10 @@ a {
 }
 
 .theme.summer {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
   background-color: #0e6394;
   color: #f3e9dd;
   border-color: #0e6394;
@@ -153,6 +164,10 @@ a {
 }
 
 .theme.autumn {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
   background-color: #d06224;
   color: #f9e4c0;
   border-color: #8a8635;
@@ -166,6 +181,30 @@ a {
   background-color: #f9e4c0;
   color: #d06224;
   border-color: #d06224;
+}
+
+.lang-switcher {
+  display: grid;
+  gap: 6px;
+  padding-right: 5%;
+}
+
+.lang-switch {
+  background-color: var(--main-background);
+  color: var(--main-text);
+  font-weight: bold;
+  border-style: solid;
+  border-width: thin;
+  border-color: var(--main-text);
+  border-radius: 5px;
+  box-shadow: 4px 5px 10px var(--shadow-color);
+  transition-duration: 0.4s;
+}
+
+.lang-switch:hover {
+  background-color: var(--main-text);
+  color: var(--main-background);
+  border-color: var(--main-text);
 }
 
 footer {
